@@ -1,0 +1,26 @@
+# Local outputs, captures and generated models
+results/
+runtime/
+*.slx
+*.slxc
+*.slx.*
+slprj/
+*.asv
+*.m~
+*.autosave
+*.mat
+*.log
+src/hardware/demo/test_images/
+**/复验输出/
+**/离线验证/
+**/验证输出/
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.lic
+*.prf
+.DS_Store
+Thumbs.db

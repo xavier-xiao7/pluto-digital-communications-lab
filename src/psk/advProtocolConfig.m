@@ -1,0 +1,9 @@
+function cfg=advProtocolConfig()
+% Public protocol constants. No TX payload or channel injection parameters.
+cfg=struct('version',1,'maxPayload',256,'headerBytes',53, ...
+    'headerCodedBits',896,'headerInterleaveDepth',16,'interleaveDepth',16, ...
+    'fec',true,'interleave',true,'lineCode','NRZ','payloadType',1, ...
+    'repetitions',1,'guardBits',32,'maxSyncErrors',2);
+cfg.preamble=repmat([0;1],64,1);
+cfg.sync=advBytesToBits(uint8([211 145 197 167 240 110 43 77]));
+end

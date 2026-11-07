@@ -1,0 +1,131 @@
+{
+  "date": "2026-11-07",
+  "environment": "25.1.0.2973910 (R2025a) Update 1",
+  "softwareOnly": true,
+  "passed": true,
+  "protocolChecks": 13,
+  "portableChecks": 9,
+  "secdedSingleErrorCases": 128,
+  "secdedDoubleErrorCases": 448,
+  "pskReceiverWaveforms": 7,
+  "independentRicianConditions": 10,
+  "demonstrations": {
+    "passed": 12,
+    "count": 12
+  },
+  "fskRadioAdapterWaveforms": {
+    "passed": 13,
+    "count": 13
+  },
+  "overflowSegmentHandling": true,
+  "pskRadioWaveforms": [
+    {
+      "mode": "BPSK",
+      "passed": true,
+      "bytes": 36,
+      "cfoHz": 18000.000001502896,
+      "bufferSeconds": 2.184021
+    },
+    {
+      "mode": "QPSK",
+      "passed": true,
+      "bytes": 36,
+      "cfoHz": 18000.00000299025,
+      "bufferSeconds": 1.162688
+    }
+  ],
+  "uiConstructed": true,
+  "advancedMatrix": {
+    "version": "25.1.0.2973910 (R2025a) Update 1",
+    "caseCount": 57,
+    "requiredCount": 35,
+    "requiredPassed": true,
+    "completeCount": 46,
+    "softwareErrorCount": 0,
+    "failedCases": [
+      "BPSK_stress_EbNo0_seed401",
+      "BPSK_stress_EbNo0_seed503",
+      "BPSK_stress_CFO700",
+      "QPSK_stress_EbNo0_seed401",
+      "QPSK_stress_EbNo0_seed503",
+      "QPSK_stress_EbNo4_seed401",
+      "QPSK_stress_EbNo4_seed503",
+      "QPSK_stress_EbNo8_seed401",
+      "QPSK_stress_EbNo12_seed401",
+      "QPSK_stress_EbNo16_seed401",
+      "QPSK_stress_CFO700"
+    ],
+    "rfTested": false,
+    "soundcardPhysicalTested": false
+  },
+  "fskMatrix": {
+    "matlabVersion": "25.1.0.2973910 (R2025a) Update 1",
+    "requiredCasesPassed": true,
+    "caseCount": 33,
+    "fullMessageSuccesses": 24,
+    "failedCases": [
+      "combined_EbNo_0_seed_67",
+      "combined_EbNo_0_seed_101",
+      "combined_EbNo_0_seed_203",
+      "combined_EbNo_4_seed_67",
+      "combined_EbNo_4_seed_101",
+      "combined_EbNo_4_seed_203",
+      "combined_EbNo_8_seed_67",
+      "combined_EbNo_8_seed_101",
+      "combined_EbNo_8_seed_203"
+    ],
+    "clockStudy": [
+      {
+        "ppm": -2000,
+        "pllComplete": true,
+        "fixedComplete": false,
+        "pllValidFrames": 8,
+        "fixedValidFrames": 0,
+        "expectedFrameCopies": 8,
+        "estimatedPeriod": 99.80126287031166,
+        "injectedPeriod": 99.8
+      },
+      {
+        "ppm": -500,
+        "pllComplete": true,
+        "fixedComplete": true,
+        "pllValidFrames": 8,
+        "fixedValidFrames": 5,
+        "expectedFrameCopies": 8,
+        "estimatedPeriod": 99.95190375323637,
+        "injectedPeriod": 99.95
+      },
+      {
+        "ppm": 0,
+        "pllComplete": true,
+        "fixedComplete": true,
+        "pllValidFrames": 8,
+        "fixedValidFrames": 8,
+        "expectedFrameCopies": 8,
+        "estimatedPeriod": 100.00203977494445,
+        "injectedPeriod": 100
+      },
+      {
+        "ppm": 500,
+        "pllComplete": true,
+        "fixedComplete": true,
+        "pllValidFrames": 8,
+        "fixedValidFrames": 4,
+        "expectedFrameCopies": 8,
+        "estimatedPeriod": 100.05133052829167,
+        "injectedPeriod": 100.05
+      },
+      {
+        "ppm": 2000,
+        "pllComplete": true,
+        "fixedComplete": false,
+        "pllValidFrames": 8,
+        "fixedValidFrames": 0,
+        "expectedFrameCopies": 8,
+        "estimatedPeriod": 100.20136261610395,
+        "injectedPeriod": 100.2
+      }
+    ],
+    "rfHardwareTested": false
+  }
+}
